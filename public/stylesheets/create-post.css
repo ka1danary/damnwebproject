@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(45deg, #000428, #004e92);
+}
+
+.wrapper {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.comment_form_field {
+    color: #d7d7d7;
+    font-family: Chakra_Bold;
+}
+
+.container {
+    height: 700px;
+}
+
+.form_reg{
+    font-family: Chakra_Bold;
+    padding: 2px;
+    font-size: 13px;
+    border: 1px solid #2f5379;
+    width: 600px;
+    height: 100px;
+    background: #316282;
+    color : aliceblue;
+    transition:all 0.1s linear 0s;
+}
+
+.form_reg:hover {
+    border: 1px solid #39a2e9;
+}
+
+.buttonSearch {
+    margin-top: 10px;
+
+}

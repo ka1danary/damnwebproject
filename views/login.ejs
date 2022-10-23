@@ -1,0 +1,26 @@
+<head>
+    <%- include('head'); %>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/registration.css">
+
+</head>
+
+<h2 class="text">Entrance</h2>
+
+<form class="center" name="comment" action="" method="post">
+    <div class="reg-container">
+        <p class="comment_form_field">Login / Name</p>
+        <input required type="text" name="login" placeholder="" maxlength="10" class="form_reg">
+    </div>
+
+    <div class="reg-container">
+        <p class="comment_form_field">Password</p>
+        <input required type="password" name="password" placeholder="" maxlength="10" class="form_reg">
+
+    </div>
+    <input class="buttonSearch" id="button_reg" type="submit" name="submit" value="Confirm">
+
+    <div class="log-conteiner-form">
+        <a href="/registration">I don't have profile</a>
+    </div>
+
+</form>

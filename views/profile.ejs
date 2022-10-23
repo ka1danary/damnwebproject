@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('head'); %>
+    <link rel="stylesheet" type="text/css" href="stylesheets/profile.css">
+</head>
+<body>
+
+    <div class = "wrapper">
+        <header>
+            <%- include('header'); %>
+        </header>
+    <main>
+        <h3>Profile</h3>
+        <div class = "all_content">
+            <div id = "avatars_nickname" class="wrapper_main1">
+                <div class="user_avatar">
+                    <%if(user.user_picture !== null){%>
+                    <img src="<%= user.user_picture %>">
+                    <%}else{%>
+                    <img src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png">
+                    <%}%>
+                </div>
+                <div class = "nickname">
+                    <p><%= user.login %></p>
+                </div>
+
+                <form class = "container_button_search"  name="comment" action="" method="post">
+                    <input class="buttonSearch_profile" type="submit" name="submit" value="Change Nickname">
+                    <input class="buttonSearch_profile" type="submit" name="submit" value="Change Avatar">
+                    <input class="buttonSearch_profile" id = "create_posts" type="button" name="submit" value="Create Post">
+                </form>
+                <script>
+                    let button1 = document.getElementById("create_posts");
+                    button1.addEventListener('click', () => {
+                        document.location.href = "/new_post";
+                    });
+                </script>
+            </div>
+
+            <div id = "posts_and_comments" class="wrapper_main2">
+                <div class = "content" id = "content1"><h4>My posts</h4>
+                    <% for (let i = 0; i < posts.length; i += 1){ %>
+                    <a href = "/article/<%= posts[i].post_id %>" class="article-header"><%= posts[i].post_name %></a>
+                    <% } %>
+                </div>
+                <div class = "content"> <h4>My comments</h4>
+                    <% for (let i = 0; i < comments.length; i += 1){ %>
+                    <a href = "/article/<%= comments[i].post_id %>" class="article-header"><%= comments[i].cmnt_txt %></a>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <%- include('footer'); %>
+    </footer>
+    </div>
+</body>
+</html>

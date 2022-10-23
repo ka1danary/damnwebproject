@@ -1,0 +1,8 @@
+footer {
+    background:linear-gradient(45deg, #141E30,#243B55);
+    height: 20px;
+    font-family: Anonym_Bold;
+    text-align: center;
+    margin: 4px 0 2px 0;
+    color: #afafaf;
+}

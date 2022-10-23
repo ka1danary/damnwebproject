@@ -1,0 +1,14 @@
+<% for(let i = 0; i < Math.min(posts[i].comments.length, 3); i += 1){ %>
+<div class="comment">
+
+    <div class="data">
+        <img class="ava" src="/public/images/аватарки/ava1.jfif" alt="">
+        <span class="username"><%=posts[i].comments[i].autor%></span>
+        <span class="post-time"><%=posts[i].comments[i].date%></span>
+    </div>
+
+    <div class="text">
+        <%=posts[i].comments[i].text%>
+    </div>
+</div>
+<% } %>

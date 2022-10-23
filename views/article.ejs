@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <%- include('head'); %>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/article.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <%- include('header'); %>
+    </header>
+    <div class="article">
+        <h3 class="article-header"><%= posts.post_name %></h3>
+        <div class="article-autor"><%= posts.post_author %></div>
+        <li class="article-post-time"><%= posts.pub_date.toLocaleDateString('en-GB').replaceAll('/', '.') %></li>
+        <div class="img_comment">
+            <img src="<%= posts.post_pict %>" alt="Здесь должна была быть картинка">
+        </div>
+        <p class="article-text"><%= posts.post_content %></p>
+    </div>
+    <hr>
+
+    <form class="comment_form" name="comment" action="" method="post">
+        <h2>Live the comment</h2>
+        <textarea name="comment-text" cols="70" rows="15" style="resize: none;" class="input_comment_field"> </textarea>
+        <br>
+
+        <input required type="submit" name="submit" value="Confirm" class="buttonSearch">
+    </form>
+    <div class="comments">
+        <% for(var i = 0; i < comments.length; i += 1){ %>
+            <div class="comment">
+                <div class="data">
+                    <span class="username"><%= comments[i].author %></span>
+                    <span class="post-time"><%= comments[i].cmnt_date.toLocaleDateString('en-GB').replaceAll('/', '.') %></span>
+                </div>
+                <div class="text">
+                    <%= comments[i].cmnt_txt %>
+                </div>
+            </div>
+        <% } %>
+    </div>
+
+    <footer>
+        <%- include('footer'); %>
+    </footer>
+</div>
+</body>

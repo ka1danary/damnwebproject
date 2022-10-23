@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(45deg, #000428, #004e92);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    user-select : none;
+    text-align: center;
+
+
+
+}
+
+.wrapper {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+h1 {
+    color: aliceblue;
+    font-family: Chakra_Bold;
+    text-align: center;
+}
+
+div {
+    color: aliceblue;
+    font-family: Chakra_Bold;
+    text-align: center;
+}
+

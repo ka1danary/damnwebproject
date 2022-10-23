@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <%- include('head'); %>
+    <link rel="stylesheet" type="text/css" href="stylesheets/homepage.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <%- include('header'); %>
+    </header>
+
+    <h2> All posts </h2>
+
+    <% for (var i = 0; i < posts.length; i += 1) { %>
+        <div class="container">
+            <div class="article">
+                <a href = "/article/<%= posts[i].post_id %>" class="article-header"><%= posts[i].post_name %></a>
+                <div class="article-autor"><%= posts[i].post_author %></div>
+                <div class="article-post-time"><%= posts[i].pub_date.toLocaleDateString('en-GB').replaceAll('/','.') %></div>
+                <p class="article-text"><%= posts[i].post_content %></p>
+            </div>
+            <div class = "img_comment">
+                <img src="<%= posts[i].post_pict%>" alt="Здесь должна была быть картинка">
+            </div>
+        </div>
+    <% } %>
+
+    <footer>
+        <%- include('footer'); %>
+    </footer>
+</div>
+</body>

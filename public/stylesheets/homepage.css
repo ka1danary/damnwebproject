@@ -1,0 +1,75 @@
+body {
+    background: linear-gradient(45deg, #000428, #004e92);
+}
+
+.wrapper {
+    width: min(900px, 100%);
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+h2 {
+    color: #39a2e9;
+    font-family: Chakra_Bold;
+    margin-left: 10px;
+}
+
+.img_comment img {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #081B55;
+    object-fit: cover;
+    margin: 10px 10px 10px 10px;
+    padding: 0;
+
+}
+.container {
+    background:linear-gradient(45deg, #141E30,#243B55);
+    height: min(300px, 100%);
+    border: 2px solid #102034;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    display : flex;
+    justify-content: space-between;
+    text-decoration: none;
+
+}
+
+.article-header {
+    color: #d7d7d7;
+    font-family: Chakra_Bold;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.article-header:hover {
+    color: #d7d7d7;
+}
+
+.article-autor {
+    color : #39a2e9;
+    font-family: Chakra_Bold;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.article-post-time {
+    color : #afafaf;
+    font-family: Chakra_Bold;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.article-text {
+    color: #d7d7d7;
+    font-family: Chakra_Bold;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+

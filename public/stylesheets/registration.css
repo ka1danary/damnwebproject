@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(45deg, #000428, #004e92);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+
+h2 {
+    text-align: center;
+    color: #d7d7d7;
+    font-family: Chakra_Bold;
+    font-size: 50px;
+    margin-top: 160px;
+    user-select : none;
+}
+
+.reg-container {
+    color: #d7d7d7;
+    font-family: Chakra_Bold;
+    font-size: 20px;
+    user-select : none;
+
+}
+
+#button_reg {
+    width: 250px;
+    height: 40px;
+    margin:40px 0 15px 0 ;
+    background: #316999;
+    user-select : none;
+    user-select : none;
+
+}
+
+.form_reg {
+    font-family: Chakra_Bold;
+    padding: 2px;
+    font-size: 13px;
+    border: 1px solid #2f5379;
+    width: 250px;
+    height: 30px;
+    background: #316999;
+    color : aliceblue;
+    transition:all 0.1s linear 0s;
+    user-select : none;
+}
+
+.form_reg:hover {
+    border: 1px solid #39a2e9;
+}
+
+.center {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    user-select : none;
+    text-align: center;
+
+}
+p {
+    text-align: center;
+}
+
+a {
+    color: #afafaf;
+    font-size: 15px;
+    font-family: Chakra_Bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:link {
+    color: #afafaf;
+    font-size: 20px;
+    font-family: Chakra_Bold;
+}
+
+a:visited{
+    color: #afafaf;
+    font-size: 20px;
+    font-family: Chakra_Bold;
+}
+
+a:hover{
+    color: #d7d7d7;
+    font-size: 20px;
+    font-family: Chakra_Bold;
+}
+
+a:active {
+    color: #afafaf;
+    font-size: 20px;
+    font-family: Chakra_Bold;
+}

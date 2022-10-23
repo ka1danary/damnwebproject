@@ -1,0 +1,22 @@
+<div class="menu_and_name">
+
+    <ul class="menu_main">
+
+        <li class="menu_cell"><a href="/" class="menu_cell_href">Home</a></li>
+        <li class="menu_cell"><a href="/sections" class="menu_cell_href">Sections</a></li>
+        <li class="menu_cell"><a href="/about" class="menu_cell_href">About Us</a></li>
+
+        <form class="search_and_buttonSearch" action="/">
+            <input class="search" type="text" name="text" placeholder="">
+            <input class="buttonSearch" id="button_search" type="submit" name="submit" value="Search">
+        </form>
+        <input class="buttonSearch" id="button_profile" type="image" src="../img/pngwing.com.png">
+        <script>
+            let button = document.getElementById("button_profile");
+            button.addEventListener('click', () => {
+                document.location.href = "/profile";
+            });
+        </script>
+    </ul>
+</div>
+<div class="mainName">ReBlog</div>
